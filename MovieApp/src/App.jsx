@@ -1,7 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import Hero from './Components/Hero/Hero';
 import MovieCard from './Components/MovieCard/MovieCard';
-import Footer from './Components/Footer/Footer';
 import './App.css';
 
 function App() {
