@@ -1,0 +1,49 @@
+.card {
+    width: 250px;
+    height: 490px;
+    margin-bottom: 30px;
+    transition: transform 0.2s;
+  }
+
+  .img-container {
+    position: relative;
+  }
+
+  .card .img-poster{
+    width: 250px;
+    height: 370px;
+  }
+
+  .fav-button {
+    font-size: 30px;
+    position: absolute; 
+    border: none;
+    outline: none;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .fav-button.favorite {
+    background-color: #be123c;
+    color: white;
+  }
+  
+  .released {
+    height: 16px;
+    font-weight: 700;
+    font-size: 12px;
+    color: #9ca3af;
+  }
+  
+  .mov-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #111827;
+  }
+
+.genre {
+    font-weight: 700;
+    font-size: 12px;
+    color: #9ca3af;
+}
