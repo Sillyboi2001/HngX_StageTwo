@@ -226,6 +226,9 @@ body {
 .movie-cast .actors {
   color: #be123c;
 }
+.ending {
+  margin: 50px 0;
+}
 .footer {
   width: 100%;
 }

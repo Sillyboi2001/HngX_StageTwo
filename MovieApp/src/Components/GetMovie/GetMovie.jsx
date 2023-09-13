@@ -42,16 +42,16 @@ const GetMoviebyId = () => {
           data-testid="loader"
       /> 
       </div> :
-      <div className="container2">
-        <main className="main-content">
-            <div className='about-screen'>
-              <img src={`https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}`} />
-              <div className='about-play'>
-              <button><img alt='imob' src={Play} /></button>
-              <p>Watch Trailer</p>
-            </div>
-            </div>
-            <div className="stories-wrapper">
+      <><div className="container2">
+            <main className="main-content">
+              <div className='about-screen'>
+                <img src={`https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}`} />
+                <div className='about-play'>
+                  <button><img alt='imob' src={Play} /></button>
+                  <p>Watch Trailer</p>
+                </div>
+              </div>
+              <div className="stories-wrapper">
                 <ul className="work-exp">
                   <li data-testid="movie-title">{movie.title}</li>
                   <li data-testid="movie-release-date">{movie.release_date}</li>
@@ -59,11 +59,12 @@ const GetMoviebyId = () => {
                   <li data-testid="movie-runtime">{movie.runtime} minutes</li>
                 </ul>
                 <div className='desc'>
-                    <p className="description" data-testid="movie-overview">{movie.overview}</p>
+                  <p className="description" data-testid="movie-overview">{movie.overview}</p>
                 </div>
-            </div>
-        </main>
-    </div>
+              </div>
+            </main>
+          </div>
+        </>
       }
     </>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
+import Footer from "../Footer/Footer";
 import "./moviecard.css";
 import { AiOutlineHeart } from 'react-icons/ai'
 
@@ -37,6 +38,9 @@ const MovieCard = (props) => {
             <span className="genre">Action, Adventure, Horror</span>
         </div>
         ))}
+        <div className="ending">
+          <Footer />
+        </div>
       </>
     )
 }
