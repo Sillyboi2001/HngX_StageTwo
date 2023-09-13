@@ -36,7 +36,6 @@ function App() {
           <MovieCard movies={movies}/>
         </div>
     </div>
-    <Footer />
     </>
   )
 }
