@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Tv from '../../Images/tv.png';
 import Menu from '../../Images/Menu.png';
-import { AiOutlineSearch } from 'react-icons/ai'
 import './Navbar.css';
 
 const Navbar = (props) => {
@@ -32,7 +31,7 @@ const Navbar = (props) => {
         <a href="#" className="link">{props.header}</a>
       </div>
       <div className="searchbar">
-          <form className="form" onSubmit={props.handleSearch}>
+          <form className="form" onSubmit={handleSearch}>
             <div className="input-container">
             <input 
               type="search"
@@ -40,9 +39,6 @@ const Navbar = (props) => {
               value={value}
               onChange={(e) => setValue(e.target.value)}
             />
-            <button type="submit" className="search-button" onClick={handleSearch}>
-              <AiOutlineSearch />
-            </button>
             </div>
           </form>
       </div>
