@@ -4,6 +4,7 @@ import ClipLoader from 'react-spinners/ClipLoader';
 import Play from '../../Images/Play.png'
 import axios from 'axios';
 import './Getmovie.css';
+import Footer from '../Footer/Footer';
 
 const GetMoviebyId = () => {
   const [movie, setMovie] = useState([])
@@ -42,29 +43,52 @@ const GetMoviebyId = () => {
           data-testid="loader"
       /> 
       </div> :
-      <><div className="container2">
-            <main className="main-content">
-              <div className='about-screen'>
-                <img src={`https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}`} />
-                <div className='about-play'>
-                  <button><img alt='imob' src={Play} /></button>
-                  <p>Watch Trailer</p>
-                </div>
-              </div>
-              <div className="stories-wrapper">
-                <ul className="work-exp">
-                  <li data-testid="movie-title">{movie.title}</li>
-                  <li data-testid="movie-release-date">{movie.release_date}</li>
-                  <li>PG-13</li>
-                  <li data-testid="movie-runtime">{movie.runtime} minutes</li>
-                </ul>
-                <div className='desc'>
-                  <p className="description" data-testid="movie-overview">{movie.overview}</p>
-                </div>
-              </div>
-            </main>
+      <>
+      <div className='about-content'>
+        <div className='about-screen'>
+          <img alt='about-screen' src={`https://image.tmdb.org/t/p/w1280${movie.backdrop_path}`} />
+          <div className='about-play'>
+            <button><img alt='imob' src={Play} /></button>
+            <p>Watch Trailer</p>
           </div>
-        </>
+        </div>
+        <div className='about-details'>
+        <div className='ab-heading'>
+          <h3 data-testid='movie-title' >{movie.original_title}</h3>
+          <ul>
+            <li data-testid='movie-release-date'>{movie.release_date}</li>
+            <li data-testid='movie-runtime' >{movie.runtime}m</li>
+          </ul>
+          <p>Action</p>
+          <p>Drama</p>
+        </div>
+      </div>
+      <div className='about-data'>
+        <div className='left'>
+          <div className='deta'>
+            <p data-testid='movie-overview' >
+              {movie.overview}
+            </p>
+          </div>
+          <div className='director'>
+            <p>Director: <span>Joseph Kranacki</span></p>
+          </div>
+          <div className='director'>
+            <p>Writer: <span>Joseph Kranacki, Zack sylder, Peter craig.</span></p>
+          </div>
+          <div className='director'>
+            <p>Stars: <span>Tom cruise, Jennifer lopez, Miles Teller.</span></p>
+          </div>
+          <div className='top-rated'>
+            <button>Top rated movie #65</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className='ending'>
+      <Footer />
+    </div>
+    </>
       }
     </>
   );

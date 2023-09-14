@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
-import { AiOutlineSearch } from "react-icons/ai";
 import Tv from '../../Images/tv.png';
 import Menu from '../../Images/Menu.png';
 import MovieCard from "../MovieCard/MovieCard";
@@ -52,7 +51,7 @@ const Search = () => {
     <div className="nav-bar">
       <div className="header">
         <img src={Tv} alt='tv' className="header-image"/>
-        <a href="#" className="link">MovieBox</a>
+        <a href="../../" className="link">MovieBox</a>
       </div>
       <div className="searchbar">
           <form className="form" onSubmit={handleSearch}>
@@ -62,9 +61,6 @@ const Search = () => {
               placeholder="What do you want to watch?" 
               onChange={(e) => setSearch(e.target.value)}
             />
-            <button type="submit" className="search-button">
-              <AiOutlineSearch />
-            </button>
             </div>
           </form>
       </div>
@@ -91,7 +87,11 @@ const Search = () => {
             <div className='row1'>
               <MovieCard movies={searchContent} />
             </div>
-          </div></>
+          </div>
+          <div  className='ending'>
+            <Footer />
+          </div>
+    </>
       }
     </div>
     </>

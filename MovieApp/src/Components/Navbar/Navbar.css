@@ -9,7 +9,11 @@
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
-  }  
+  } 
+  .search-text {
+    padding: 20px;
+    margin: 20px;
+  }
   .search-button {
     position: absolute;
     top: 0; 
@@ -17,4 +21,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: 765px) {
+    .link {
+      display: none;
+    }
   }
