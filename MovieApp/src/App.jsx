@@ -9,7 +9,7 @@ function App() {
   const topTen = movies.slice(0, 10)
 
   useEffect(() => {
-    fetch('https://api.themoviedb.org/3/movie/popular?api_key=35c7144fd49923e0772252b3464572d0')
+    fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=35c7144fd49923e0772252b3464572d0&language=en-US&page=1')
       .then(response => response.json())
       .then(response => setMovies(response.results))
       .catch(err => console.error(err));
