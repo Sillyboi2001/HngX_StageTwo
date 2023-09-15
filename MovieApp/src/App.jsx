@@ -23,17 +23,9 @@ function App() {
     <div className='category'>
       <h2>TOP 10 MOVIES</h2>
     </div>
-    <div className='moviecard-container'>
-        <div className='row'>
-          <MovieCard movies={topTen}/>
-        </div>
-    </div>
-    <div className='category'>
-      <h2>FEATURED MOVIES</h2>
-    </div>
     <div className='moviecard-container1'>
         <div className='row1'>
-          <MovieCard movies={movies}/>
+          <MovieCard movies={topTen}/>
         </div>
     </div>
     <div  className='ending'>
