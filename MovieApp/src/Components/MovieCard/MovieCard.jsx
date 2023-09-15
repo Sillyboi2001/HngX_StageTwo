@@ -31,7 +31,7 @@ const MovieCard = (props) => {
                 <AiOutlineHeart />
               </button>
             </div>
-            <span className="released" data-testid="movie-release-date">USA, {movie.release_date}</span>
+            <span className="released" data-testid="movie-release-date">{movie.release_date}</span>
             <p className="mov-title" data-testid="movie-title">{movie.title}</p>
             <p className="rating">{movie.vote_average}</p>
             <span className="genre">Action, Adventure, Horror</span>

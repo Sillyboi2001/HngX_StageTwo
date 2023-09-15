@@ -57,7 +57,7 @@ const GetMoviebyId = () => {
           <h3 data-testid='movie-title' >{movie.original_title}</h3>
           <ul>
             <li data-testid='movie-release-date'>{movie.release_date}</li>
-            <li data-testid='movie-runtime' >{movie.runtime}m</li>
+            <li data-testid='movie-runtime' >{movie.runtime}</li>
           </ul>
           <p>Action</p>
           <p>Drama</p>

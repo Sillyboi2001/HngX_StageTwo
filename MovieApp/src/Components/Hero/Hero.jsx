@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navar";
 import Homepage from "../Homepage/Homepage";
 
-const Hero = ({movie}) => {
+const Hero = () => {
   return (
     <div className="text-container">
       <Navbar
@@ -10,7 +10,7 @@ const Hero = ({movie}) => {
         signin="Signin"
       />
       <div>
-        <Homepage randomMovie={movie}/>
+        <Homepage />
       </div>
     </div>
   )
